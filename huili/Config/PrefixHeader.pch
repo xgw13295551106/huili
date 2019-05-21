@@ -1,0 +1,113 @@
+//
+//  PrefixHeader.pch
+//  EduParent
+//
+//  Created by Carl on 17/8/24.
+//  Copyright © 2017年 yangH4. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PrefixUrl.pch"
+#import "OrtherSdk.h"
+#import "selfSdk.h"
+#import "MJExtension.h"
+#import "CommonConfig.h"
+
+//常用定义
+#define SCREEN_SIZE ([[UIScreen mainScreen] bounds].size)
+#define kScreenBounds ([[UIScreen mainScreen] bounds])
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define KIsiPhoneXH (int)(KIsiPhoneX?58:0)
+#define KIsiPhoneXNavHAndB (int)(KIsiPhoneX?122:64)
+#define AL_DEVICE_HEIGHT    [UIScreen mainScreen].bounds.size.height
+#define AL_DEVICE_WIDTH     [UIScreen mainScreen].bounds.size.width
+#define win_width [UIScreen mainScreen].bounds.size.width
+#define win_height [UIScreen mainScreen].bounds.size.height
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+#define PROPORTION fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.width)/375
+#define LineColor [UIColor colorWithHexString:@"cccccc"]
+#define PROPORTION fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.width)/375
+#define STYLECOLOR [UIColor colorWithHexString:@"e1302a"]
+
+#define text1Color [UIColor colorWithHexString:@"333333"]
+#define text2Color [UIColor colorWithHexString:@"999999"]
+#define text3Color [UIColor colorWithHexString:@"666666"]
+
+#define GlOBALBACKCOLOR [UIColor colorWithRed:(245 / 255.0) green:(244 / 255.0) blue:(241 / 255.0) alpha:1]
+
+#define DefaultsImg [UIImage imageWithColor:[UIColor colorWithHexString:@"999999"]]
+#define DefaultsWaWaImg [UIImage imageNamed:@"common_pic_list_default"]
+#define DefaultUserImg  [UIImage imageNamed:@"default_touxiang"]
+
+#define TOKEN [UserInfoManager manager].currUserInfo.token
+#define RTOKEN [UserInfoManager manager].currUserInfo.ease_pwd
+#define CurrUserInfo [UserInfoManager manager].currUserInfo
+
+#define noCash   [CurrUserInfo.margin floatValue]==0.0&&([CurrUserInfo.cancel_margin_id isEqualToString:@"0"]||[CurrUserInfo.cancel_margin_id isEqualToString:@""])
+
+#define NavHeight ([UIApplication sharedApplication].statusBarFrame.size.height +44)
+#define IsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define BottomHeight (int)(IsiPhoneX?34:0)
+
+#define YHWeakSelf __weak typeof(self) weakSelf = self;
+
+//下载的文件的保存路径
+#define DOWNLOADS_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject] stringByAppendingPathComponent:@"downloads"]
+// app名称
+#define App_Name [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+// app版本
+#define App_Version [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+// app BundleId
+#define App_BundleId [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
+//获取app中icon
+#define App_icon [[[NSBundle mainBundle] infoDictionary][@"CFBundleIcons"][@"CFBundlePrimaryIcon"][@"CFBundleIconFiles"] lastObject]
+#define AppSchemes  @"com.zwk.huiliStore"
+
+#define FirstOpen @"FirstOpen"  ///< 是否第一次打开app的标识符
+
+#define SHARECONTENT  [NSString stringWithFormat:@"快来下载%@",App_Name]//下载content
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+
+#define Network_Error @"网络连接失败"
+#define PushDeviceID @"PushDeviceID"
+#define ServiceKEY  @"ServiceKEY"
+
+
+#define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+#define PFR20Font [UIFont fontWithName:PFR size:20];
+#define PFR18Font [UIFont fontWithName:PFR size:18];
+#define PFR16Font [UIFont fontWithName:PFR size:16];
+#define PFR15Font [UIFont fontWithName:PFR size:15];
+#define PFR14Font [UIFont fontWithName:PFR size:14];
+#define PFR13Font [UIFont fontWithName:PFR size:13];
+#define PFR12Font [UIFont fontWithName:PFR size:12];
+#define PFR11Font [UIFont fontWithName:PFR size:11];
+#define PFR10Font [UIFont fontWithName:PFR size:10];
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+/** 常量数 */
+#define DCMargin  10
+
+/** 导航栏高度 */
+#define DCNaviH  44
+
+/** 底部tab高度 */
+#define DCBottomTabH  49
+/** 顶部Nav高度+指示器 */
+#define DCTopNavH  64
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,32 @@
+ platform :ios, '8.0'
+ use_frameworks!
+
+target 'huili' do
+pod 'Reachability',  '~> 3.0.0' 
+pod 'AFNetworking', '~> 2.0'
+pod 'SDWebImage', '~> 3.8.2'
+pod 'IQKeyboardManager'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'VTMagic'
+pod 'AliyunOSSiOS'
+pod 'SVProgressHUD'
+pod 'UMengUShare/UI'
+pod 'UMengUShare/Social/ReducedWeChat'
+pod 'UMengUShare/Social/ReducedQQ'
+pod 'WechatOpenSDK'
+pod 'SDCycleScrollView'
+pod 'Toast'
+pod 'JPush'
+pod 'PYSearch'
+pod 'Masonry'
+pod 'RKNotificationHub'
+pod 'TZImagePickerController', '~> 1.7.9'
+pod 'MWPhotoBrowser', '~> 2.1.2'
+pod 'ACAlertController'
+pod 'AMap3DMap', '~>5.0.0'
+pod 'AMapSearch'
+pod 'AMapLocation'
+pod 'STPickerView', '2.4'
+
+end

@@ -1,0 +1,125 @@
+//
+//  PrefixUrl.pch
+//  BreathingDoctor
+//
+//  Created by Carl on 17/7/21.
+//  Copyright © 2017年 yangH4. All rights reserved.
+//
+
+#ifndef PrefixUrl_pch
+#define PrefixUrl_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//服务器
+#define KEY @"cpic201711"
+#define HOST @"http://47.100.62.73"
+#define YH_REQUEST_DOMAIN @"http://47.100.62.73/server.php"
+#define openUrl    @"http://store.zwk777.com/os/app.html?n="
+
+
+#define GetConfig           @"/api/v1/common/config"//配置信息
+#define GetYeFuClass        @"/api/v1/user/artcat"//获取冶父报类型
+#define YeFuList            @"/api/v1/user/artlist"//冶父报列表
+#define YHRegist            @"/api/v1/common/register"//注册
+#define YHLogin             @"/api/v1/common/login"//登录
+#define WJDUPDATEPWD        @"/api/v1/common/forget"//忘记密码
+#define USERSIGN            @"/api/v1/user/usersign"//签到
+#define GETINFO             @"/api/v1/user/userinfo"//获取用户信息
+#define XYUpdate            @"/api/v1/user/update"//个人信息修改
+#define XYMsgList           @"/api/v1/user/mlist"//我的消息
+#define CREATADDRESS         @"/api/v1/user/addressadd"//新建地址
+#define AddressList         @"/api/v1/user/addresslist"//地址列表
+#define AddressEdit         @"/api/v1/user/addressedit"//地址编辑
+#define AddressDec          @"/api/v1/user/addressdel"//地址删除
+#define YHMain              @"/api/v1/common/main"//首页接口
+#define CATLIST             @"/api/v1/goods/cat"//商品分类
+#define GoodsList           @"/api/v1/goods/goodslist"//商品列表
+#define HOTKEY              @"/api/v1/common/search"//热门搜索
+#define GoodsDetail         @"/api/v1/goods/goodsdetail"//商品详情
+#define GoodsCollect        @"/api/v1/user/collect"//商品收藏
+#define GoodsCancelCollect  @"/api/v1/user/cancelcollect"//商品取消收藏
+#define GoodsCollectList    @"/api/v1/user/collectlist"//收藏列表
+#define CartNumber          @"/api/v1/goods/cartnum"//购物车数量
+#define AddCart             @"/api/v1/goods/addcart"//加入购物车
+#define CartList            @"/api/v1/goods/cartlist"//购物车列表
+#define ClaerCart           @"/api/v1/goods/emptycart"//清空购物车
+#define Glist               @"/api/v1/common/glist"//使用指南列表
+#define ChangeMobile        @"/api/v1/user/chgMobile"//更换手机号
+#define GuessLike           @"/api/v1/goods/guesslike"//猜你喜欢
+#define GetDis              @"/api/v1/common/getcity"//获取区县
+#define GetCity             @"/api/v1/common/region"//获取城市
+#define GetHotCity          @"/api/v1/common/city"//获取热门城市
+#define GoOrderInfo         @"/api/v1/goods/torder"//下单信息
+#define YHOrderPay          @"/api/v1/goods/submitorder"    //订单提交
+#define OrderAmount         @"/api/v1/goods/ordernum"//订单数量
+#define GetBrand            @"/api/v1/goods/goodsbrand"//请求品牌
+#define Invoice             @"/api/v1/user/invoice"//开发票
+#define GoodsBrand          @"/api/v1/goods/goodsbrand"//商品筛选
+
+#define YHMargin            @"user/margin"//押金充值
+#define SCANCAROPEN         @"user/open"//扫码进门出门
+#define SCANCAPAY           @"user/scanPay"//扫码支付
+
+#define PayOrder            @"user/pay"//立即支付
+#define OrderList           @"user/order"//我的消费
+#define GUIDE               @"common/guide"//使用指南
+
+#define ServiceList         @"common/service"//客户服务选项
+#define ServerSummbit       @"user/service"//服务提交
+#define YHRefund            @"user/refund"//押金退款
+#define YHCancelRefund      @"user/cancelRefund"//押金退款取消
+#define Option              @"/api/v1/user/topcof"//充值选项
+#define XYCharge            @"/api/v1/user/charge"//充值
+#define Blist               @"/api/v1/user/moneydetail"//钱包明细
+#define Ilist               @"/api/v1/user/intdetail"//积分明细
+#define LCWithdraw          @"/api/v1/user/extract" //提现
+#define LCExtractList       @"/api/v1/user/intdetail"//积分明细列表
+#define LCUnbindAccount     @"/api/v1/user/cancelBind"//解绑账户
+#define LCBindAccount       @"/api/v1/user/bind"//绑定支付宝账户
+#define LCIncomeList        @""//收入列表
+
+#define XYLogout          @"common/logout"//退出登录
+#define XYChangeMobile    @"user/chgmobile"//修改手机号
+#define YHCODE            @"/api/v1/common/scode"//code 1 注册 2忘记密码 3-修改手机号获取旧手机验证码, 4-修改手机号获取新手机验证码 5绑定 6解绑
+#define XYUpdatePwd      @"user/update"//修改密码
+#define USERINFO         @"user/info"//用户信息
+#define LCThirdLogin     @"/api/v1/common/otherlogin" //第三方登录
+#define LCThirdCode      @"/api/v1/common/sbindcode" //第三方登录绑定手机号验证码
+#define LCThirdBind      @"/api/v1/common/bindm" //第三方登录绑定手机号注册
+
+#define LCMyAlly         @"/api/v1/user/myaliy" //我的盟友
+#define VipRechargeConfig @"/api/v1/user/mebconfig"  //会员充值配置
+#define RechargeVip      @"/api/v1/user/mebpay"  //会员充值
+
+//订单管理
+#define LCOrderDetail   @"/api/v1/goods/orderdetail"//订单详情
+#define LCOrderList     @"/api/v1/goods/orderlist"//订单列表
+#define LCJudgeConfig   @"/api/v1/user/evalconfig"  //评价标签配置
+#define LCCancelOrder   @"/api/v1/goods/cancelOrder" //取消订单
+#define LCOrderPay      @"/api/v1/goods/orderPay"    //订单支付
+#define LCJudge         @"/api/v1/user/evaluation"   //订单评价
+#define LCJudgeInfo     @"/api/v1/user/evaldetail"  //查看已评价内容
+#define LCOrderStatusList @"/api/v1/goods/orderstatus"  //订单状态列表
+#define LCBuyAgain      @"/api/v1/goods/againbuy"   //再次购买
+#define LCOrderAction   @"/api/v1/goods/orderAction" //订单操作
+#define LCOrderRefund   @"/api/v1/goods/back"  //申请售后
+#define LCSearchWuliu   @"/api/v1/goods/lview"  //查看物流
+
+//发票
+#define VoList @"/api/v1/user/volist"    //待开发票列表
+#define InList @"/api/v1/user/inlist"    //已开发票列表
+#define InDetail @"/api/v1/user/indetail"//发票详情
+
+
+//通知
+#define Notifi_LoginSuccess  @"Notifi_LoginSuccess"//登录成功
+#define Notifi_RegistSuccess @"RegistSuccess"//注册成功
+#define Notifi_NeedGetInfo  @"Notifi_NeedGetInfo"//需要获取用户信息
+#define Notifi_CartChange  @"Notifi_CartChange"//购物车变化
+
+#define Car_Goods_Num  @"Car_Goods_Num" //已添加的购物车数量
+
+#define Notifi_SelectArressSuccess  @"Notifi_SelectArressSuccess"//登录成功
+#endif /* PrefixUrl_pch */

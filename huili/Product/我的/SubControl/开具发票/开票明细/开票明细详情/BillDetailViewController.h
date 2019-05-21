@@ -1,0 +1,17 @@
+//
+//  BillDetailViewController.h
+//  YeFu
+//
+//  Created by zhongweike on 2017/12/20.
+//  Copyright © 2017年 yangH4. All rights reserved.
+//
+
+#import "YHBaseViewController.h"
+
+@interface BillDetailViewController : YHBaseViewController
+
+/** 发票id */
+@property (nonatomic,copy) NSString *in_id;
+
+
+@end

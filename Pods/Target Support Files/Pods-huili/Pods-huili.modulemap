@@ -1,0 +1,6 @@
+framework module Pods_huili {
+  umbrella header "Pods-huili-umbrella.h"
+
+  export *
+  module * { export * }
+}
